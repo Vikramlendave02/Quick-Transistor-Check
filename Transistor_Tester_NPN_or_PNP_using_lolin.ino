@@ -1,3 +1,26 @@
+/*
+  ------------------------------------------------------------
+  Project   : Auto Transistor Tester with OLED Display
+  Author    : Vikram Lendave
+  Date      : 10-Aug-2025
+  Board     : Wemos D1 Mini (ESP8266)
+  Description:
+      This project tests NPN and PNP transistors automatically 
+      by controlling the base and reading the collector state.
+      The result is displayed on an SSD1306 OLED display and 
+      printed to the Serial Monitor.
+
+      - Base Pin (via 1kΩ resistor) : D5
+      - Collector Pin (with 10k pull-up to 3.3V) : D6
+      - Display : SSD1306 OLED (I2C address 0x3C)
+
+  Libraries Required:
+      - Wire.h
+      - Adafruit_GFX.h
+      - Adafruit_SSD1306.h
+  ------------------------------------------------------------
+*/
+
 #include <Wire.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
